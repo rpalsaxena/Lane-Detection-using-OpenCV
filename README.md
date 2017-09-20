@@ -105,4 +105,6 @@ Here's a [link to my video result](./abc.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
- It was quite tough to implement polynomial computations and curvature part. I feel I am able to get reasonable results, but they can still be enhanced. :-) 
+ The issues that I faced were polynomial computation to calculate the curvature. The lane detection failed a bit on curves.
+ Another major issue that I feel is lighting and weather conditions. In case of low light, it becomes tough to recognize the lanes properly. 
+To make it more robust in cases of low light, we can use extra lighting with cameras.  
