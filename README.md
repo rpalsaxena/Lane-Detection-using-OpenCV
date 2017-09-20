@@ -35,15 +35,15 @@ def cal_undistort(img, objpoints, imgpoints):
 ```
 The above function returns numpy array of undistorted image.
 
-![alt text](files/undistort_road.jpg)
+![alt text](files/undistort_road.JPG)
 
 #### 2. Describe how you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I tried numerous combinations of color conversions but I got good results only with RGB to HLS conversion. It detected the yellow lane lines perfectly. 
-![](files/rgb_hls.jpg)
+![](files/rgb_hls.JPG)
 
 I used a combination of color and gradient thresholds to generate a binary image. Coded a pipeline() function for this task.  It returns 2 different binary image results(color and combined binary). I am interested only in combined binary image. 
-![](files/pipeline.jpg)
+![](files/pipeline.JPG)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -65,7 +65,7 @@ dst = np.float32([[offset, offset],
 ```
 Used getPerspectiveTransform() to calculate a perspective transform from four pairs of the corresponding points.
 Then warped the image to correct position using its perspective transform.
-![](files/pespective.jpg)
+![](files/pespective.JPG)
 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
